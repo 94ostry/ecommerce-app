@@ -10,6 +10,16 @@ These additional references to services in application:
 * [H2 console](http://localhost:8080/h2-console)
 * [Swagger](http://localhost:8080/swagger-ui.html) REST API documentation.
 
+### How add authentication to the service?
+As a option of authentication of service I would consider Token-Based Authentication System, e.g. JWT.
+Advantages of JWT:
+- No Session to Manage (stateless): The JWT is a self contained token which has authetication  information, 
+expire time information, and other user defined claims digitally signed.
+- A single token can be used with multiple services. 
+- Good Performance because reduce the network round trip time (much less traffic than a session-based solution).
+- Decoupled/Decentralized: The token can be generated anywhere.
+
+
 ### How make the service redundant?
 
 If I were to make this website redundant in the first place I would change the way it is delivered.
